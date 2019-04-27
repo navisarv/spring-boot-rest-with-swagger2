@@ -24,7 +24,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Configuration
 @EnableSwagger2
-public class SwaggerConfig {                                    
+public class SwaggerConfigWithOAuthAuthentication {                                    
     private static final String CLIENT_ID = null;
 	private static final String CLIENT_SECRET = null;
 	private static final String AUTH_SERVER = null;
