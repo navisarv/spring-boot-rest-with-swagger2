@@ -1,0 +1,26 @@
+buildscript {
+	ext{
+		springBootVersion = '2.1.4.RELEASE'
+	}
+	dependencies{
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+    repositories {
+        mavenCentral()
+    }
+    
+}
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'eclipse'
+apply plugin: 'java'
+
+repositories {
+        mavenCentral()
+    }
+
+dependencies {
+compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
+compile('io.springfox:springfox-swagger2:2.9.2')
+compile('io.springfox:springfox-swagger-ui:2.9.2')
+}
